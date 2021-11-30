@@ -1,0 +1,10 @@
+section {
+  background-color: black;
+  width: 700px;
+  height: 700px;
+}
+div {
+  background-color: thistle;
+  width: 50%;
+  height: 50%;
+}

@@ -1,0 +1,84 @@
+* {
+  background-color: #cbeec7d3;
+  /*this is universal selector*/
+}
+button {
+  font-size: 10px;
+  background-color: #a8dadc; /* element selectors*/
+}
+H1,
+h2 {
+  color: #1d3557;
+}
+#signup {
+  background-color: #1d3557;
+  color: aliceblue; /*this is known as ID selector,selects only specific id*/
+}
+#signup:hover {
+  color: #1d3557;
+  background-color: white;
+}
+.tag {
+  /*this is class tag*/
+  background-color: rgb(236, 2, 2);
+  color: rgb(207, 190, 190);
+}
+footer a {
+  /*this is descendant selector*/
+  color: blueviolet;
+  background-color: white;
+}
+footer > a {
+  /*this is direct descendant selector*/
+  color: aqua;
+  background-color: burlywood;
+}
+
+input[type="password"] {
+  color: red;
+  background-color: black;
+} /*this is attribute selector & these are case sensitive*/
+input[type="number"] {
+  color: black;
+  background-color: grey;
+}
+a[href*="google"] {
+  color: magenta;
+  background-color: midnightblue;
+}
+
+/*the Hover is a pseudo class ,
+ this changes the adjective of any element 
+ when the cursor is placed on the same*/
+
+button:hover {
+  color: grey;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  font: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+/*this is active psuedo class,
+this chnages the adjectives of elements when activated*/
+button:active {
+  color: green;
+  background-color: yellow;
+}
+/*all below are psuedo elements
+1-edits first letter
+2-edits first line
+3-edits selection*/
+
+h2::first-letter {
+  font-size: 40px;
+}
+P::first-line {
+  color: purple;
+}
+p::selection {
+  background-color: rgb(255, 115, 0);
+}

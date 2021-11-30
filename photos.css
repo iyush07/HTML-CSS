@@ -1,0 +1,31 @@
+img {
+  width: 30%;
+  margin: calc(10% / 6);
+  transition: ease-out 0.5s;
+}
+
+nav {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f1f1f1;
+  width: 20%;
+  margin-left: calc(10% / 6);
+  padding: 1.2em 0;
+  transition: all 0.5s;
+}
+nav:hover {
+  transform: translateX(0.5rem);
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+img:hover {
+  transform: translateY(0.2rem);
+  border-color: grey;
+  box-shadow: 5 5rem 2em -1em #ee1010;
+}
+
+/* 30 + 30 + 30
+
+10% 

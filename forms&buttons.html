@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Demostration Of Forms</h1>
+    <form action="'/TACOS">
+      <!-- action is where data is sent like www.example.com-->
+      <p>
+        <label for="username">Enter your username</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter your Password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="password"
+          name="password"
+        />
+      </p>
+      <p>
+        <label for="color">Enter color</label>
+        <input
+          id="color"
+          type="color"
+          placeholder="Select colors"
+          name="color"
+        />
+      </p>
+      <p>
+        <label for="number">Enter age</label>
+        <input id="number" type="number" placeholder="age" name="number" />
+      </p>
+      <p>
+        <label>
+          Enter Date
+          <input type="date" placeholder="Date" />
+          <!--for labelling, here is another way to do the same,-->
+          <!--you can skip the "for" and "id" linking-->
+          <!--it is best that we use typical methods of labelling forms -->
+        </label>
+      </p>
+      <button>Submit</button>
+      <input
+        type="button"
+        value="click me"
+      /><!--another mehtod to develop a button but it wont submit because its outside <form> -->
+      <!--input is an open tag use to create input fields -->
+      <!--the_type defines what kind of text is to be entered to HTML-->
+      <!--the_placeholder defines what to enter in a form to users-->
+      <!--label tag is used to assign a label to input field-->
+      <!--here, for and id are linked elements-->
+      <!--if you have button inside the <form> , its default action is to submit the_form-->
+      <!--and if dont use button inside <form> , it does nothing-->
+    </form>
+    <h1>Hijacking Searches</h1>
+    <form action="https://www.google.com/search">
+      <h2>Search Google</h2>
+      <input type="text" placeholder="xyz" name="q" />
+      <button>Search google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+      <h2>Search youtube</h2>
+      <input type="text" name="search_query" />
+      <button>Search Youtube</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+/* 1 Inline elemts--> doesnt respect margin widht height but padding
+2 block elemnts respects all 
+3 inline-block elements respects all*/
+span {
+  background-color: rebeccapurple;
+  border: 2px solid black;
+  width: 500px;
+  padding: 2px 4px;
+}
+div {
+  background-color: olivedrab;
+  border: 5px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 20px 50px;
+  display: inline-block;
+}
+div:nth-of-type(1) {
+  display: inline-flex;
+  flex-direction: column;
+}
+h1 {
+  background-color: turquoise;
+  padding: 10px;
+  width: 200px;
+}
